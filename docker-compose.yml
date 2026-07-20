@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  openclaw:
+    build: .
+    container_name: openclaw-gateway
+    ports:
+      - "18789:18789"
+    environment:
+      - NODE_ENV=production
+      - GATEWAY_PORT=18789
+    volumes:
+      - ./config/local:/app/config/local
+      - ./memory:/app/memory
+    restart: unless-stopped
