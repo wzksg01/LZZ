@@ -1,10 +1,10 @@
 {
-  "name": "openclaw",
+  "name": "librabot",
   "version": "1.0.0",
   "description": "Local-first, self-hosted open-source AI Agent framework",
   "main": "dist/index.js",
   "bin": {
-    "openclaw": "./bin/openclaw.js"
+    "librabot": "./bin/librabot.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

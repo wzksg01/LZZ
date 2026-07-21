@@ -22,6 +22,6 @@ COPY --from=builder /app/config ./config
 
 ENV NODE_ENV=production
 
-EXPOSE 18789
+EXPOSE 18780
 
 CMD ["node", "dist/gateway/server.js"]
