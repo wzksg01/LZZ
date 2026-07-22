@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  librabot:
+    build: .
+    container_name: librabot-gateway
+    ports:
+      - "18780:18780"
+    environment:
+      - NODE_ENV=production
+      - GATEWAY_PORT=18780
+    volumes:
+      - ./config/local:/app/config/local
+      - ./memory:/app/memory
+    restart: unless-stopped
