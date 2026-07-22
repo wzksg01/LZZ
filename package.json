@@ -12,8 +12,8 @@
     "dev": "tsx watch src/gateway/server.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "oxlint src/",
-    "format": "oxf fmt src/",
+    "lint": "tsc --noEmit",
+    "format": "prettier --write src/",
     "onboard": "tsx src/cli/commands/onboard.ts",
     "gateway": "tsx src/cli/commands/gateway.ts"
   },
@@ -43,8 +43,7 @@
     "typescript": "^5.5.4",
     "tsx": "^4.19.0",
     "vitest": "^2.0.5",
-    "oxlint": "^0.11.0",
-    "oxf": "^0.6.0"
+    "prettier": "^3.3.3"
   },
   "engines": {
     "node": ">=22.19.0"
